@@ -54,7 +54,7 @@ A reusable Terraform module for deploying production-ready Amazon EKS clusters w
    │ NAT GW  │              │ NAT GW  │              │ NAT GW  │
    └─────────┘              └─────────┘              └─────────┘
 
-CloudWatch Logs: /aws/eks/devops-portfolio-cluster/cluster
+CloudWatch Logs: /aws/eks/cluster-01/cluster
 ```
 
 ## How to Run It
@@ -81,7 +81,7 @@ terraform plan
 terraform apply
 
 # Configure kubectl
-aws eks update-kubeconfig --region us-east-1 --name devops-portfolio-cluster
+aws eks update-kubeconfig --region us-east-1 --name cluster-01
 
 # Verify nodes
 kubectl get nodes
@@ -97,7 +97,7 @@ kubectl get nodes
 
 See `variables.tf` for all configurable options including:
 - `aws_region` (default: us-east-1)
-- `cluster_name` (default: devops-portfolio-cluster)
+- `cluster_name` (default: cluster-01)
 - `node_instance_types` (default: t3.medium)
 - `environment` (default: dev)
 
