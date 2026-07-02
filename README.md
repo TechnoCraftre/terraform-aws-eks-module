@@ -34,7 +34,7 @@ A reusable Terraform module for deploying production-ready Amazon EKS clusters w
                     │      EKS Cluster            │
                     │  ┌─────────────────────┐    │
                     │  │  Managed Node Group │    │
-                    │  │  (t3.medium, SPOT)   │    │
+                    │  │  (t3.medium, SPOT)  │    │
                     │  │  - 2 desired nodes  │    │
                     │  │  - 1-5 auto-scaling │    │
                     │  └─────────────────────┘    │
@@ -52,7 +52,7 @@ A reusable Terraform module for deploying production-ready Amazon EKS clusters w
         │                         │                         │
    ┌────▼────┐              ┌────▼────┐              ┌────▼────┐
    │ NAT GW  │              │ NAT GW  │              │ NAT GW  │
-   └─────────┘              └─────────┘            └─────────┘
+   └─────────┘              └─────────┘              └─────────┘
 
 CloudWatch Logs: /aws/eks/devops-portfolio-cluster/cluster
 ```
